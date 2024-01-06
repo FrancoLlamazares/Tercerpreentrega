@@ -1,0 +1,641 @@
+/* Reset y estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Color de fondo de la página */
+body {
+    background-color: #f6f8f5;
+}
+
+.header h1 {
+    margin-top: 10px;
+    font-size: 3em; /* Ajusta el tamaño del título para destacarlo */
+}
+
+.header p {
+    font-size: 1.2em;
+    margin-top: 10px;
+    color: #fafafa;
+}
+
+
+/* Estilos del contenedor grid */
+.contenedor-grid {
+    display: grid;
+    grid-template-areas:
+        "header"
+        "main"
+        "footer";
+    grid-template-rows: auto;
+    min-height: 100vh;
+}
+
+/* Estilos de los items grid */
+.item-grid {
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Estilos para el encabezado */
+.header {
+    grid-area: header;
+    text-align: center;
+    border-bottom: 1px solid rgb(0, 0, 0);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+}
+
+/* Estilos para el logo */
+.logo {
+    width: 100%;
+    max-width: 768px;
+
+    display: block;
+    margin: 0 auto;
+}
+
+
+
+/* Estilos para el título (h1) */
+h1 {
+    margin-top: 10px;
+}
+
+/* Estilos para la barra de navegación */
+.navbar {
+    background-color: #f6f8f5;
+    ;
+    /* Cambia el color de fondo*/
+}
+
+.navbar-brand {
+    color: #436d46;
+    /* Cambia el color del texto de la marca */
+    font-size: 1.5rem;
+    /* Ajusta el tamaño del texto de la marca */
+}
+
+.navbar-nav .nav-link {
+    color: #436d46;
+    /* Cambia el color del texto de los enlaces de navegación */
+    font-size: 1.2rem;
+    /* Ajusta el tamaño del texto de los enlaces de navegación */
+}
+
+.navbar-toggler-icon {
+    background-color: #436d46;
+    /* Cambia el color del icono del botón desplegable en pantallas pequeñas */
+}
+
+/* Añadir espacio adicional para la barra de navegación */
+body {
+    padding-top: 70px;
+    /* Ajusta el espacio superior del cuerpo para evitar que la barra de navegación oculte contenido */
+}
+
+
+/* Estilos para la sección de bienvenida */
+.main section {
+    margin-bottom: 30px;
+    /* Ajusta el espacio inferior según sea necesario */
+}
+
+/* Estilos para las secciones de imágenes */
+.imagenes {
+    text-align: center;
+    padding: 20px;
+}
+
+.imagenes img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    display: block;
+    margin: 0 auto 20px;
+}
+
+.imagenes h2 {
+    margin-top: 20px;
+    font-size: 1.5em;
+}
+
+.imagenes p {
+    margin-bottom: 20px;
+    font-size: 1.1em;
+}
+
+
+
+/* Estilos para el footer */
+.footer {
+    grid-area: footer;
+    background-color: #436d46; /* Ajusta el color de fondo según tu paleta de colores */
+    color: #fafafa; /* Ajusta el color del texto según tu paleta de colores */
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between; /* Distribuye los elementos a lo largo del espacio disponible */
+    align-items: center;
+}
+
+/* Estilos para los enlaces sociales en el footer */
+.footer .social-links a {
+    color: #fff;
+    margin: 0 10px;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.footer .social-links a:hover {
+    color: #6fa66e;
+}
+
+/* Estilos para los enlaces adicionales en el footer */
+.footer .footer-links a {
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.footer .footer-links a:hover {
+    text-decoration: underline;
+}
+
+
+/* Estilos para dispositivos móviles */
+@media screen and (max-width: 600px) {
+    h1 {
+        font-size: 1.5em;
+    }
+
+    .logo {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .contenedor-grid {
+        grid-template-areas:
+            "header"
+            "main"
+            "footer";
+    }
+}
+
+/* Estilos para el carrusel */
+.carousel-inner {
+    border-radius: 10px;
+    /* Bordes redondeados para el carrusel */
+    overflow: hidden;
+    /* Oculta el contenido que desborda del carrusel */
+}
+
+.carousel-item {
+    text-align: center;
+    /* Centra el contenido del carrusel */
+}
+
+.carousel-caption {
+    background-color: rgba(0, 0, 0, 0.7);
+    /* Fondo semi-transparente para la leyenda */
+    border-radius: 5px;
+    /* Bordes redondeados para la leyenda */
+    padding: 15px;
+    /* Espaciado interno para la leyenda */
+}
+
+.imagenes {
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+    transition: transform 0.5s ease-in-out; /* Ajusta la duración y la función de tiempo para una transición más suave */
+}
+
+.imagenes:hover {
+    transform: scale(1.015); /* Escala la imagen al 110% del tamaño original al pasar el mouse */
+}
+
+.navbar {
+    background: linear-gradient(to bottom, #f6f8f5, #d5e8d4);
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1);
+}
+
+
+.navbar-nav .nav-link {
+    color: #436d46;
+    font-size: 1.2rem;
+    transition: color 0.3s ease-in-out; /* Ajusta la duración y la función de tiempo para una transición más suave */
+}
+
+
+.navbar-nav .nav-link:hover {
+    color: #6fa66e; /* Cambia el color al pasar el mouse */
+}
+
+.navbar-toggler-icon {
+    background-color: #436d46;
+    border: 1px solid #fafafa; /* Añade un borde para mayor contraste */
+    border-radius: 3px;
+}
+
+.navbar.fixed-top {
+    background-color: #f6f8f5;
+    /* Otros estilos según sea necesario */
+}
+
+/* Estilos para los enlaces dentro de las secciones */
+.main section a {
+    color: #436d46;
+    text-decoration: none; /* Elimina el subrayado */
+}
+
+/* Estilos para los enlaces al pasar el mouse dentro de las secciones */
+.main section a:hover {
+    font-weight: bold;
+    color: #6fa66e;
+    
+    
+    text-decoration: none; /* Mantén el subrayado eliminado al pasar el mouse */
+}
+
+/* Estilos generales de la sección de animales */
+.animal-section {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+/* Estilos generales para cada animal */
+.animal {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Estilos para las imágenes dentro de la sección de animales */
+.animal img {
+    width: 100%;
+    max-width: 600px; /* Establece un ancho máximo para las imágenes */
+    height: auto; /* Ajusta la altura automáticamente para mantener la proporción original */
+    display: block;
+    margin: 0 auto 20px;
+    transition: transform 0.5s ease-in-out; /* Agrega una transición suave a la propiedad transform */
+}
+
+/* Efecto de agrandamiento al pasar el mouse sobre las imágenes */
+.animal img:hover {
+    transform: scale(1.05); /* Escala la imagen al 110% del tamaño original al pasar el mouse */
+}
+
+
+
+/* Estilos para el footer */
+.footer {
+    grid-area: footer;
+    background-color: #436d46;
+    color: #fafafa;
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;  /* Cambia a flex-direction: column */
+    justify-content: center;
+    align-items: center;     
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact-info,
+.quick-links,
+.social-media {
+    flex: 1;
+}
+
+/* Estilos para los enlaces en el footer */
+.quick-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.quick-links a {
+    color: #fafafa;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 5px;
+    transition: color 0.3s ease-in-out;
+}
+
+.quick-links a:hover {
+    color: #6fa66e;
+}
+
+/* Estilos para las redes sociales en el footer */
+.social-link {
+    display: block;
+    color: #fafafa;
+    text-decoration: none;
+    margin-bottom: 5px;
+    font-size: 16px;
+}
+
+.social-link:hover {
+    color: #6fa66e;
+}
+
+
+.bottom-footer {
+    background-color: #6fa66e;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.bottom-footer p {
+    margin: 0;
+    color: #fafafa;
+    display: inline-block;
+}
+
+.social-media {
+    display: flex;
+    justify-content: center; /* Ajusta el alineado al centro */
+    align-items: center; /* Alinea los elementos verticalmente al centro */
+}
+
+.social-item {
+    text-align: center;
+    margin: 0 10px; /* Añade un margen entre cada elemento */
+}
+
+.social-item img {
+    width: 30px;
+    height: 30px; 
+    margin-bottom: 5px; /* Añade espacio entre la imagen y el texto */
+}
+
+
+.animal-section .logo {
+    width: 100px; /* Ajusta el tamaño según sea necesario */
+    height: auto; /* Mantiene la proporción original */
+}
+
+.animal-section .logo {
+    width: auto; /* Restaura el ancho automático para mantener la proporción original */
+    height: auto; /* Restaura la altura automática */
+}
+
+
+/* Estilos para la barra de navegación en animales.html */
+.navbar {
+    max-width: 550px; /* Establece el ancho máximo de la barra de navegación */
+    margin: 0 auto; /* Centra la barra de navegación */
+}
+
+
+/* Media query para dispositivos móviles */
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .contact-info,
+    .quick-links,
+    .social-media {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+}
+
+.logo {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Estilos para el logo */
+.logo {
+    width: 100%;
+    max-width: 768px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Estilos para todas las tarjetas */
+.card {
+    background-color: #6b9946a1;
+    color: #000000;
+    border: 1px solid #4e703b; /* Añade un borde */
+    border-radius: 8px; /* Bordes redondeados */
+    margin-bottom: 20px; /* Añade espacio entre las tarjetas */
+    overflow: hidden; /* Evita desbordamiento horizontal */
+    height: 800px; /* Altura fija para todas las tarjetas */
+}
+
+/* Ajustes para las tarjetas en dispositivos pequeños */
+@media (max-width: 767px) {
+    .card {
+        margin-bottom: 20px; /* Añade un espacio entre las tarjetas */
+        width: calc(100% - 20px); /* Ajusta el ancho al 100% en dispositivos pequeños */
+    }
+}
+
+/* Resto de los estilos */
+.card img {
+    width: 100%; /* Ancho al 100% para llenar el contenedor */
+    height: 60%; /* Altura al 60% del contenedor, ajusta según tus necesidades */
+    object-fit: cover; /* Ajusta el tamaño de la imagen manteniendo la proporción */
+    border-top-left-radius: 8px; /* Bordes redondeados solo en la esquina superior izquierda */
+    border-top-right-radius: 8px; /* Bordes redondeados solo en la esquina superior derecha */
+}
+
+.card-body {
+    text-align: justify; /* Justifica el texto */
+    padding: 20px; /* Añade relleno al cuerpo de la tarjeta */
+    height: 40%; /* Altura al 40% del contenedor, ajusta según tus necesidades */
+}
+
+.card-title {
+    font-size: 1.8em; /* Ajusta el tamaño del título */
+    margin-bottom: 10px; /* Agrega espacio bajo el título */
+}
+
+.card-text {
+    font-size: 1.2em; /* Ajusta el tamaño del texto */
+    margin-bottom: 20px; /* Agrega espacio bajo el texto */
+}
+
+.btn-primary {
+    background-color: #a7e632; /* Cambia el color del botón principal */
+    border-color: #4e703b; /* Cambia el color del borde del botón principal */
+    color: #000; /* Cambia el color del texto del botón a negro */
+}
+
+.btn-primary:hover {
+    background-color: #4e703b; /* Cambia el color al pasar el mouse */
+    border-color: #4e703b; /* Cambia el color del borde al pasar el mouse */
+    color: #fff; /* Cambia el color del texto del botón a blanco al pasar el mouse */
+}
+
+/* Centra el video horizontalmente */
+iframe {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%; /* Ajusta el ancho máximo del video */
+}
+
+body {
+    overflow-x: hidden; /* Evita desbordamiento horizontal en todo el cuerpo */
+}
+
+.animal-section {
+    padding: 50px 0; /* Ajusta el espaciado dentro de la sección de animales */
+}
+
+.card {
+    height: 100%; /* Ajusta la altura de todas las tarjetas para que tengan el mismo tamaño */
+    border: 1px solid #ddd; /* Añade un borde para separar las tarjetas */
+    border-radius: 8px; /* Añade esquinas redondeadas */
+    overflow: hidden; /* Evita que las imágenes se salgan de las tarjetas */
+}
+
+.card img {
+    object-fit: cover; /* Hace que las imágenes se ajusten al tamaño de la tarjeta sin deformarse */
+    height: 200px; /* Ajusta la altura de las imágenes */
+    width: 100%; /* Asegura que las imágenes ocupen todo el ancho de la tarjeta */
+}
+
+.card-body {
+    padding: 15px; /* Ajusta el espaciado dentro del cuerpo de la tarjeta */
+}
+
+.card-title {
+    font-size: 1.5rem; /* Ajusta el tamaño del título de la tarjeta */
+}
+
+.card-text {
+    font-size: 1rem; /* Ajusta el tamaño del texto de la tarjeta */
+}
+
+.atraccion-section {
+    padding: 50px 0; /* Ajusta el espaciado dentro de la sección de atracciones */
+}
+
+.card {
+    height: 100%; /* Ajusta la altura de todas las tarjetas para que tengan el mismo tamaño */
+    border: 1px solid #ddd; /* Añade un borde para separar las tarjetas */
+    border-radius: 8px; /* Añade esquinas redondeadas */
+    overflow: hidden; /* Evita que las imágenes se salgan de las tarjetas */
+}
+
+.card img {
+    object-fit: cover; /* Hace que las imágenes se ajusten al tamaño de la tarjeta sin deformarse */
+    height: 300px; /* Ajusta la altura de las imágenes según sea necesario */
+    width: 100%; /* Asegura que las imágenes ocupen todo el ancho de la tarjeta */
+}
+
+.card-body {
+    padding: 15px; /* Ajusta el espaciado dentro del cuerpo de la tarjeta */
+}
+
+.card-title {
+    font-size: 1.5rem; /* Ajusta el tamaño del título de la tarjeta */
+}
+
+.card-text {
+    font-size: 1rem; /* Ajusta el tamaño del texto de la tarjeta */
+}
+h2 {
+    text-align: center; /* Centra el texto horizontalmente */
+    margin-bottom: 30px; /* Ajusta el margen inferior según sea necesario */
+}
+
+/* Estilos para la sección de contacto */
+
+.seccionFormulario {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  form {
+    display: grid;
+    gap: 10px;
+  }
+  
+  label {
+    font-weight: bold;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+  }
+  
+  textarea {
+    resize: vertical;
+  }
+  
+  .botonformulario {
+    background-color: #729c24;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .botonformulario:hover {
+    background-color: #2b3a0e;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
