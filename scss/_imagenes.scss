@@ -1,0 +1,119 @@
+/* Estilos para las secciones de imágenes */
+
+.imagenes {
+    text-align: center;
+    padding: 20px;
+  
+    img {
+      width: 100%;
+      max-width: 600px;
+      height: auto;
+      display: block;
+      margin: 0 auto 20px;
+    }
+  
+    h2 {
+      margin-top: 20px;
+      font-size: 1.5em;
+    }
+  
+    p {
+      margin-bottom: 20px;
+      font-size: 1.1em;
+    }
+  
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+    transition: transform 0.5s ease-in-out;
+  
+    /* Ajusta la duración y la función de tiempo para una transición más suave */
+  
+    &:hover {
+      transform: scale(1.015);
+  
+      /* Escala la imagen al 110% del tamaño original al pasar el mouse */
+    }
+  }
+  
+  /* Estilos para los enlaces dentro de las secciones */
+  
+  .main section a {
+    color: #436d46;
+    text-decoration: none;
+  
+    /* Elimina el subrayado */
+  
+    &:hover {
+      font-weight: bold;
+      color: #6fa66e;
+      text-decoration: none;
+  
+      /* Mantén el subrayado eliminado al pasar el mouse */
+    }
+  }
+  
+  /* Estilos para los enlaces al pasar el mouse dentro de las secciones */
+  
+  /* Estilos generales de la sección de animales */
+  
+  .animal-section {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: left;
+  }
+  
+  /* Estilos generales para cada animal */
+  
+  .animal {
+    margin-bottom: 20px;
+    text-align: center;
+  
+    img {
+      width: 100%;
+      max-width: 600px;
+  
+      /* Establece un ancho máximo para las imágenes */
+      height: auto;
+  
+      /* Ajusta la altura automáticamente para mantener la proporción original */
+      display: block;
+      margin: 0 auto 20px;
+      transition: transform 0.5s ease-in-out;
+  
+      /* Agrega una transición suave a la propiedad transform */
+  
+      &:hover {
+        transform: scale(1.05);
+  
+        /* Escala la imagen al 110% del tamaño original al pasar el mouse */
+      }
+    }
+  }
+  
+  /* Estilos para las imágenes dentro de la sección de animales */
+  
+/* Efecto de agrandamiento al pasar el mouse sobre las imágenes */
+
+.imagenes {
+    img {
+      width: 100%;
+      height: auto;
+      max-width: 100%;
+  
+      /* Asegura que las imágenes no se agranden más allá de su tamaño original */
+      display: block;
+      margin: 0 auto;
+      width: 750px;
+      height: 400px;
+      display: block;
+      margin: 0 auto 20px;
+    }
+  
+    padding: 2vw;
+  
+    /* Ajusta el espacio entre las imágenes utilizando la unidad vw (viewport width) */
+    text-align: center;
+  }
+  
+  

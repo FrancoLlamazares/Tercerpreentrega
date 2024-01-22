@@ -4,6 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explora nuestra galería de imágenes en Eco Reino. Sumérgete en la asombrosa biodiversidad de la vida salvaje a través de fotografías cautivadoras. ¡Vive la experiencia visualmente impactante de la naturaleza en cada rincón de nuestro zoológico!">
+
     <title>Eco Reino - Galería</title>
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -46,8 +48,7 @@
                                 </a>
                                 <ul class="dropdown-menu">
                                     <li><a class="dropdown-item" href="contacto.html">Escribinos</a></li>
-                                    <li><a class="dropdown-item" href="#">Solicitar Tickets</a></li>
-                                    <li><a class="dropdown-item" href="#">Mapa del Zoo</a></li>
+                    
                                 </ul>
                             </li>
                         </ul>
@@ -58,38 +59,31 @@
             <!-- BARRA DE NAVEGACION FIN -->
         </header>
     </div>
+    <h2>Echa un vistazo a nuestras variadas especies!</h2>
     <section class="galeriaimagenes">
-        <div id="carouselExample" class="carousel slide">
-            <div class="carousel-inner container-fluid">
-                <div class="carousel-item active">
-                    <img src="../img/dardecomerjirafas.png" class="img-fluid" class="d-block w-100" alt="Dando de comer a las jirafas">
-                </div>
-                <div class="carousel-item">
-                    <img src="../img/elefantes.jpg" class="img-fluid" class="d-block w-100" alt="Elefantes">
-                </div>
-                <div class="carousel-item">
-                    <img src="../img/lemur.jpg" class="img-fluid" class="d-block w-100" alt="Un lemur">
-                </div>
-                <div class="carousel-item">
-                    <img src="../img/flamencosagua.jpg" class="img-fluid" class="d-block w-100" alt="Flamencos en el agua">
-                </div>
-                <div class="carousel-item">
-                    <img src="../img/elefante.jpg" class="img-fluid" class="d-block w-100" alt="Un elefante">
-                </div>
-                <div class="carousel-item">
-                    <img src="../img/leon.jpg" class="img-fluid" class="d-block w-100" alt="Un leon">
-                </div>
+        <div class="container">
+            <div class="gallery">
+                <figure class="gallery__item gallery__item--1">
+                    <img src="../img/abeja.jpg" alt="Abeja en flor" class="gallery__img" class="img-fluid">
+                </figure>
+                <figure class="gallery__item gallery__item--2">
+                    <img src="../img/dardecomerjirafas.png" alt="Jirafas comiendo" class="gallery__img" class="img-fluid">
+                </figure>
+                <figure class="gallery__item gallery__item--3">
+                    <img src="../img/lorocolorido.jpg" alt="Loro de colores" class="gallery__img" class="img-fluid">
+                </figure>
+                <figure class="gallery__item gallery__item--4">
+                    <img src="../img/flamencosagua.jpg" alt="Flamencos en el agua" class="gallery__img" class="img-fluid">
+                </figure>
+                <figure class="gallery__item gallery__item--5">
+                    <img src="../img/lagarto.jpg" alt="Lagarto" class="gallery__img" class="img-fluid">
+                </figure>
+                <figure class="gallery__item gallery__item--6">
+                    <img src="../img/osopolar.jpg" alt="Oso Polar" class="gallery__img" class="img-fluid">
+                </figure>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
         </div>
-
+</section>
     </section>
     <h2>¿Sabías que las jirafas utilizan su cuello para pelear? </h2>
     <iframe class="videoIframe" width="560" height="315"
@@ -101,14 +95,15 @@
         <div class="container">
             <div class="footer-content">
                 <div class="contact-info">
-                    <h3>Contacto</h3>
-                    <p>Dirección: Calle Gato 123</p>
-                    <p>Email: EcoReinoZoo@email.com</p>
-                    <p>Teléfono: +123456789</p>
+                    <ul class="contactostyle">Contacto
+                        <li>Dirección: Calle Gato 123</li>
+                        <li>Email: EcoReinoZoo@email.com</li>
+                        <li>Teléfono: +123456789</li>
+                    </ul>
                 </div>
                 <div class="quick-links">
                     <h3>Enlaces Rápidos</h3>
-                    <ul>
+                    <ul class="enlacesrapidosstlye">
                         <li><a href="../index.html">Nuestro Zoo</a></li>
                         <li><a href="animales.html">Animales</a></li>
                         <li><a href="atracciones.html">Atracciones</a></li>
@@ -145,6 +140,9 @@
         </div>
 
         <div class="bottom-footer">
+            <a href="index.html">
+                <img class="logofooter" src="../img/logo.png" alt="Logo de Eco Reino">
+            </a>
             <p>&copy; 2023 Eco Reino. Todos los derechos reservados.</p>
         </div>
     </footer>

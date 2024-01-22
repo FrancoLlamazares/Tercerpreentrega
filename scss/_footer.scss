@@ -1,0 +1,168 @@
+/* Estilos para el footer */
+
+.footer {
+    grid-area: footer;
+    background-color: #436d46;
+  
+    /* Ajusta el color de fondo*/
+    color: $color-fuentes;
+  
+    /* Ajusta el color del texto */
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+  
+    /* Distribuye los elementos a lo largo del espacio disponible */
+    align-items: center;
+  
+    .social-links a {
+      color: #fff;
+      margin: 0 10px;
+      font-size: 20px;
+      text-decoration: none;
+  
+      &:hover {
+        color: #6fa66e;
+      }
+    }
+  
+    .footer-links a {
+      color: $color-fuentes;
+      margin: 0 10px;
+      text-decoration: none;
+  
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  
+    grid-area: footer;
+    background-color: #436d46;
+    color: $color-fuentes;
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+  
+    /* Cambia a flex-direction: column */
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Estilos para los enlaces sociales en el footer */
+  
+  /* Estilos para los enlaces adicionales en el footer */
+  
+  /* Estilos para el footer */
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .contact-info, .quick-links, .social-media {
+    flex: 1;
+  }
+  
+  /* Estilos para los enlaces en el footer */
+  
+  .quick-links {
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+  
+    a {
+      @include anclas;
+      display: block;
+      margin-bottom: 5px;
+      transition: color 0.3s ease-in-out;
+  
+      &:hover {
+        color: #6fa66e;
+      }
+    }
+  }
+  
+  /* Estilos para las redes sociales en el footer */
+  
+  .social-link {
+    display: block;
+    color: $color-fuentes;
+    text-decoration: none;
+    margin-bottom: 5px;
+    font-size: 16px;
+  
+    &:hover {
+      color: #6fa66e;
+    }
+  }
+  
+  .bottom-footer {
+    background-color: #6fa66e;
+    text-align: center;
+    padding: 10px 0;
+  
+    p {
+      margin: 0;
+      color: $color-fuentes;
+      display: inline-block;
+    }
+  }
+  
+  .social-media {
+    display: flex;
+    justify-content: center;
+  
+    /* Ajusta el alineado al centro */
+    align-items: center;
+  
+    /* Alinea los elementos verticalmente al centro */
+  }
+  
+  .social-item {
+    text-align: center;
+    margin: 0 10px;
+  
+    /* Añade un margen entre cada elemento */
+  
+    img {
+      width: 30px;
+      height: 30px;
+      margin-bottom: 5px;
+  
+      /* Añade espacio entre la imagen y el texto */
+    }
+  }
+  
+/* Estilo para el logo en el footer */
+
+.logofooter {
+    width: 150px;
+  
+    /* Ajusta el ancho */
+    border: none;
+  
+    /* Elimina cualquier borde alrededor de la imagen */
+    outline: none;
+  
+    /* Elimina el contorno de foco */
+  }
+  
+  /* Alineación del texto del pie de página */
+  
+  .bottom-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+  
+    /* Alinea el texto a la izquierda */
+  }
+  

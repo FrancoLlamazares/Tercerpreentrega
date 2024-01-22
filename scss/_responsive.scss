@@ -1,0 +1,65 @@
+/* Estilos para Dispositivos Móviles */
+
+@media screen and (max-width: 767px) {
+    .galeriaimagenes {
+      margin-top: 15px;
+    }
+  
+    .videoIframe {
+      height: 200px;
+  
+      /* Ajusta la altura del video para dispositivos móviles */
+    }
+  }
+  
+  /* Ajusta los estilos para dispositivos móviles */
+  @media screen and (max-width: 768px) {
+    .imagenes {
+      padding: 5vw;
+  
+      /* Ajusta el espacio entre las imágenes para dispositivos móviles */
+    }
+  }
+  
+  /* Ajustes para las tarjetas en dispositivos pequeños */
+  @media (max-width: 767px) {
+    .card {
+      margin-bottom: 20px;
+  
+      /* Añade un espacio entre las tarjetas */
+      width: calc(100% - 20px);
+  
+      /* Ajusta el ancho al 100% en dispositivos pequeños */
+    }
+  }
+  
+  /* Media query para dispositivos móviles */
+  @media (max-width: 768px) {
+    .footer-content {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .contact-info, .quick-links, .social-media {
+      margin-right: 0;
+      margin-bottom: 20px;
+    }
+  }
+  
+  /* Estilos para dispositivos móviles */
+  @media screen and (max-width: 600px) {
+    h1 {
+      font-size: 1.5em;
+    }
+  
+    .logo {
+      max-width: 100%;
+      height: auto;
+    }
+  
+    .contenedor-grid {
+      grid-template-areas: "header" "main" "footer";
+    }
+  }
+  
