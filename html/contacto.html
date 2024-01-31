@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="¡Conéctate con Eco Reino! Utiliza nuestra página de contacto para obtener más información sobre horarios, tarifas, eventos especiales y programas educativos. Estamos aquí para responder a tus preguntas y ayudarte a planificar una visita inolvidable. ¡Descubre cómo puedes sumergirte en la fascinante vida salvaje con nosotros!">
+    <meta name="description"
+        content="¡Conéctate con Eco Reino! Utiliza nuestra página de contacto para obtener más información sobre horarios, tarifas, eventos especiales y programas educativos. Estamos aquí para responder a tus preguntas y ayudarte a planificar una visita inolvidable. ¡Descubre cómo puedes sumergirte en la fascinante vida salvaje con nosotros!">
 
     <title>Eco Reino - Contacto</title>
     <link rel="icon" href="../img/favicon.png" type="image/png">
@@ -58,25 +59,27 @@
             <!-- BARRA DE NAVEGACION FIN -->
         </header>
     </div>
+    <main>
+        <section class="seccionFormulario">
+            <p>¿Tienes alguna pregunta o comentario? Estamos aquí para ayudarte. Utiliza el formulario de contacto para
+                ponerte en contacto con nuestro equipo.</p>
 
-    <section class="seccionFormulario">
-        <p>¿Tienes alguna pregunta o comentario? Estamos aquí para ayudarte. Utiliza el formulario de contacto para
-            ponerte en contacto con nuestro equipo.</p>
+            <form>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
 
-        <form>
-            <label for="nombre">Nombre:</label>
-            <input type="text" id="nombre" name="nombre" required>
+                <label for="correo">Correo electrónico:</label>
+                <input type="email" id="correo" name="correo" required>
 
-            <label for="correo">Correo electrónico:</label>
-            <input type="email" id="correo" name="correo" required>
+                <label for="mensaje">Mensaje:</label>
+                <textarea name="" id="" cols="30" rows="10" placeholder="Deje su mensaje..."></textarea>
 
-            <label for="mensaje">Mensaje:</label>
-            <textarea name="" id="" cols="30" rows="10" placeholder="Deje su mensaje..."></textarea>
+                <input class="botonformulario" type="submit">
+                <input class="botonformulario" type="reset">
+            </form>
+        </section>
 
-            <input class="botonformulario" type="submit">
-            <input class="botonformulario" type="reset">
-        </form>
-    </section>
+    </main>
 
     <footer class="footer">
         <div class="container">
